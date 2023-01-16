@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+        <meta name="renderer" content="webkit"/>
+        <meta name="force-rendering" content="webkit"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/>
+        <title>Hole</title>
+        <style>
+            .top {
+                padding: 200px;
+            }
+            .left {
+                margin-left: 250px;
+            }
+            .right {
+                margin-right: 500px;
+            }
+        </style>
+    </head>
+    <body background="1.jpg">
+        <div class="top">
+            <div class="left">
+                <div class="right">
+                    <div class="mdui-center">
+                        <div class="mdui-textfield">
+                            <textarea class="mdui-textfield-input" type="text" placeholder="Say here~" id="word"></textarea>
+                            <a href="javascript:clear();" class="mdui-btn mdui-btn-raised">Biu~</a>
+                            <script>
+                                function clear(){
+                                    document.getElementById('word').value='';
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    </body>
+</html>
