@@ -31,6 +31,24 @@
                             <script>
                                 function clear(){
                                     document.getElementById('word').value='';
+                                    var words = [
+                                    '如果感到累的话，不努力也是可以的。', 
+                                    '不要想着说对自己狠一点。自我冲突，自我对抗只能使情形越来越糟糕。',
+                                    '够了，你做的够多了。不用那么努力地想要好起来也没问题。',
+                                    '这不是你的错。这不是你的错。这不是你的错。', 
+                                    '但是啊，会好起来的，你也会的。'];
+                                    var rand = Math.floor(Math.random()*words.length);
+                                    var rValue = words[rand];
+                                    console.log(rValue);
+                                    mdui.dialog({
+                                        title: 'hi，你收到了一条祝福',
+                                        content: rValue,
+                                        buttons: [
+                                            {
+                                                text: '确认'
+                                            }
+                                        ]
+                                    });
                                 }
                             </script>
                         </div>
